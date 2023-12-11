@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="reg-container">
+        <h1>Registration Form</h1>
+        <p>Fill out this form with the required information.</p>
+        <form action="login.html" class="reg-form">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" placeholder="First name" required/>
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" placeholder="Last name" required/>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required/>           
+            <label for="    password">Password</label>
+            <input id="password" type="password" placeholder="Password" pattern="[a-zA-Z0-5]{8,}" required/>
+            <label for="password">Confirm Password</label>
+            <input id="password" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-5]{8,}" required/>
+            <label for="terms-and-conditions">                
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="#">terms and conditions</a>
+            </label>
+            <button class="btn">Register</button>
+        </form>     
+    </div>
+</body>
+</html>
